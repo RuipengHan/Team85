@@ -14,6 +14,7 @@ const locales = {
   "en-US": require("date-fns/locale/en-US")
 }
 
+
 const localizer = dateFnsLocalizer( {
   format,
   parse,
@@ -36,6 +37,8 @@ const events = [
   end: new Date(2023, 2, 26)
   },
 ]
+
+
 function App() {
   const[newEvent, setNewEvent] = useState({title: "", start: "", end:""})
   const[allEvents, setAllEvents] = useState(events)
@@ -63,6 +66,8 @@ function App() {
       startAccessor="start" endAccessor = "end" style = {{height: 500, margin: "50px"}} 
       />
     </div>
+
+
   );
 }
 
